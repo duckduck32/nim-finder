@@ -1,0 +1,86 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+CREATE TABLE `mhs` (
+  `NO` int(100) NOT NULL,
+  `NIM` varchar(50) NOT NULL,
+  `NAME` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `mhs` (`NO`, `NIM`, `NAME`) VALUES
+(1, '2440012491', 'Rainer Nathanael Jovann'),
+(1, '2440012491', 'Rainer Nathanael Jovann'),
+(2, '2401959250', 'Kelly Christina'),
+(3, '2440015354', 'Leon Jonathan Farrell'),
+(4, '2440011002', 'Nathanael Reuben'),
+(5, '2440015240', 'Arthur Jeremy'),
+(6, '2440005662', 'Alexander Steven Lee'),
+(7, '2401962346', 'Alexander Wijaya'),
+(8, '2440008273', 'Alvin Kenneth'),
+(9, '2440004571', 'Andhika Kusuma Ridwan'),
+(10, '2440017063', 'Andre Wijaya'),
+(11, '2401954275', 'Andreas Angger Sulistiyo Widodo'),
+(12, '2440021306', 'Anthony Tanto Kris Santoso'),
+(13, '2301955831', 'Arassya Raka Adjiwibowo'),
+(14, '2440010435', 'Bernard Bryan Hayashi'),
+(15, '2440014603', 'Calvin Gerald Kusnadi'),
+(16, '2440040702', 'Christopher Andrew'),
+(17, '2401960813', 'Clario Adorabell'),
+(18, '2401962680', 'Clevert Ganda Saputra'),
+(19, '2440014465', 'Clintswood'),
+(20, '2401960126', 'Crisdeo Nuel Siahaan'),
+(21, '2440013866', 'Daniel Steven Elba'),
+(22, '2440017656', 'Darren Farell'),
+(23, '2401961822', 'David Christian Setiawan'),
+(24, '2401962535', 'Delbert Giovanni Lie'),
+(25, '2440008891', 'Dhana Siladhika'),
+(26, '2440016571', 'Erik Hendrawan Putra Wijaya'),
+(27, '2440022990', 'Evander Dimitri Firmanto'),
+(28, '2440017504', 'Ferry Nurqadar'),
+(29, '2440005201', 'Frendy Anthony'),
+(30, '2440010271', 'Gabriel Alexander Christie'),
+(31, '2440018803', 'Gede Parama Antara'),
+(32, '2440010776', 'Handy'),
+(33, '2440020455', 'Harta Angkasa'),
+(34, '2401961204', 'Herendra Kurniawan'),
+(35, '2440009244', 'Hosea Glen Effendi'),
+(36, '2440016546', 'Ivan'),
+(37, '2440009042', 'Jason Lionardi'),
+(38, '2440019485', 'Javier Trevan'),
+(39, '2440009603', 'Jonathan Alvin Halim'),
+(40, '2440004565', 'Jova Herendra Tawang'),
+(41, '2440015000', 'Kevin Charles'),
+(42, '2440015202', 'Kevin Nathaniel Wijaya'),
+(43, '2440019825', 'Lado Mahardika Cahyono'),
+(44, '2440015184', 'Lexiandy Kuswandana'),
+(45, '2440040091', 'Louise Prajna'),
+(46, '2401860054', 'Mario Rufisanto'),
+(47, '2440009364', 'Michael Kokasih'),
+(48, '2440005233', 'Mico Wijaya'),
+(49, '2301946341', 'Muthiah Bashirah Jupriadi'),
+(50, '2301953050', 'Nadasyifa Annisa Azahrra'),
+(51, '2440011753', 'Nathanael Widjaja'),
+(52, '2401960473', 'Nicholas'),
+(53, '2440020152', 'Novena Indarto'),
+(54, '2401962232', 'Raymond Nolasco'),
+(55, '2440005164', 'Regie Tjandranata'),
+(56, '2440022095', 'Reynard Aurele Amadeo Octherananda Priyanto'),
+(57, '2440009181', 'Rionel Irawan'),
+(58, '2440018311', 'Rivan Makmur'),
+(59, '2201802664', 'Rizqullah Afif'),
+(60, '2440015423', 'Russell Ethan Kamdjaja'),
+(61, '2401960605', 'Ryan Nathan'),
+(62, '2440010416', 'Stanley Figo Gunawan'),
+(63, '2440014093', 'Stevanus Richie'),
+(64, '2440008941', 'Vincent'),
+(65, '2401954930', 'Vincent Pradipta'),
+(66, '2401960870', 'Vincentius');
+
+CREATE TABLE users (
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(200) NOT NULL
+);
+
+COMMIT;
